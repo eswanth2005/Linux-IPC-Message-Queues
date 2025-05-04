@@ -21,9 +21,7 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## C program that receives a message from message queue and display them
-
-```c
-// msqueue.c - Combined Writer/Reader for System V Message Queue
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -44,7 +42,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    key = ftok("msgq.c", 65);
+    key = ftok("progfile", 65);
     if (key == -1) {
         perror("ftok");
         return 1;
@@ -85,8 +83,9 @@ int main(int argc, char *argv[]) {
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cc2cbada-f1f7-4543-a0b4-73d7bde9c1ab)
 
-![alt text](img-ex04.png)
+
 
 
 # RESULT:
